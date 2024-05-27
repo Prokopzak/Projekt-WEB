@@ -1,29 +1,56 @@
-body{
-    background-color: blanchedalmond;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
-h1{
-    font-family: 'Roboto','Arial';
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding:50px;
-    font-size:3em;
-    letter-spacing: 3px;
-    text-transform:uppercase;    
 }
-nav a{
-    display:block;
-    width:200px;
-    background-color: hsl(183, 66%, 26%);
-    color:white;
-    margin: 10px auto;
-    min-height: 30px;
+
+h1 {
+    color: #007bff;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.25em;
-    padding:7px 5px 0px;
-    border:2px solid hsl(183, 66%, 26%);
+    cursor: pointer;
 }
-nav a:hover{
-    background-color: hsl(183, 66%, 36%);
-    border:2px solid white;
+
+button:hover {
+    background-color: #218838;
 }
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+

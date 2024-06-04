@@ -57,7 +57,18 @@
         <div id="output"></div>
         <canvas id="temperatureCanvas" width="400" height="200"></canvas>
     </div>
-    <footer>vypracovali: Ondřej Sůsa, Prokop Žák, Hugo štajer</footer>
+    <footer>
+        <div id="vypracovali">
+            vypracovali: Ondřej Sůsa, Prokop Žák, Hugo štajer
+        </div>
+        <script>
+            var datum = new Date()
+            var den = datum.getDate()
+            var mesic = datum.getMonth()+1
+            var rok = datum.getFullYear()
+            document.write("<div>" + "Dnešní datum: " + den + "." +" " + mesic + "." + " " + rok + "</div>")
+        </script>
+    </footer>
 </body>
 </html>
 <script src="script.js"></script>

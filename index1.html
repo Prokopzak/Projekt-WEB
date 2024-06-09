@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>měrná teplená kapacita</title>
+</head>    
+<body>
+    <header>
+        <h1>Měrná tepelná kapacita</h1>
+        <li>
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="index2.html">Výpočet</a></ul>
+            <ul><a href="index1.html">Obrázky</a></ul>
+        </li>
+    </header>
+
+    <div class="slideshow-container">
+    
+        <div class="slides fade">
+            <img src="./stažený soubor (1).jfif" alt="Obrázek 1">
+        </div>
+
+        <div class="slides fade">
+            <img src="./stažený soubor.jfif" alt="Obrázek 2">
+        </div>
+
+        <div class="slides fade">
+            <img src="./images.jfif" alt="Obrázek 3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <footer>
+        <div id="vypracovali">
+            vypracovali: Ondřej Sůsa, Prokop Žák, Hugo štajer
+        </div>
+        <script>
+            var datum = new Date()
+            var den = datum.getDate()
+            var mesic = datum.getMonth()+1
+            var rok = datum.getFullYear()
+            document.write("<div>" + "Dnešní datum: " + den + "." +" " + mesic + "." + " " + rok + "</div>")
+        </script>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>

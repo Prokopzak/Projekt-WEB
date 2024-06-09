@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>měrná teplená kapacita</title>
+</head>    
+<body>
+    <header>
+        <h1>Měrná tepelná kapacita</h1>
+        <li>
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="index2.html">Výpočet</a></ul>
+            <ul><a href="index1.html">Obrázky</a></ul>
+        </li>
+    </header>
+    <div id="thermo quest" class="container">
+        <h1>ThermoQuest</h1>
+        <p>vypočítejte měrnou tepelnou kapacitu</p>
+        <div>
+            <label for="material">Materiál:</label>
+            <select id="material">
+                <option value="voda">Voda</option>
+                <option value="hliník">Hliník</option>
+                <option value="železo">Železo</option>
+            </select>
+        </div>
+        <div>
+            <label for="mass">Hmotnost (kg):</label>
+            <input type="number" id="mass" step="0.1" min="0">
+        </div>
+        <div>
+            <label for="temperature">Změna teploty (°C):</label>
+            <input type="number" id="temperature" step="0.1">
+        </div>
+        <button onclick="displayResult()">Spočítat energii</button>
+        <div id="output"></div>
+        <canvas id="temperatureCanvas" width="400" height="200"></canvas>
+    </div>
+    <footer>
+        <div id="vypracovali">
+            vypracovali: Ondřej Sůsa, Prokop Žák, Hugo štajer
+        </div>
+        <script>
+            var datum = new Date()
+            var den = datum.getDate()
+            var mesic = datum.getMonth()+1
+            var rok = datum.getFullYear()
+            document.write("<div>" + "Dnešní datum: " + den + "." +" " + mesic + "." + " " + rok + "</div>")
+        </script>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
